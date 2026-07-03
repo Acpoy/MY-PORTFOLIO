@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iman Asroy — New Media &amp; Creative Design</title>
+<meta name="description" content="Portfolio of Iman Asroy — digital marketing, multimedia design, photography and front-end development. Final-year New Media Communication student open to internships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function(){
+    var saved = localStorage.getItem('theme');
+    var theme = saved || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="site-nav" id="siteNav">
+  <a href="#home" class="brand" aria-label="Iman Asroy — home">
+    <span class="brand-bracket">[</span>IA<span class="brand-bracket">]</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks" aria-label="Primary">
+    <a href="#about" data-nav>About</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#projects" data-nav>Work</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <a href="#about" data-nav>About</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#projects" data-nav>Work</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-primary" data-nav>Let's talk</a>
+</div>
+<div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+
+<main id="main">
+
+<!-- HOME / HERO -->
+<section id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal-up">Portfolio — New Media &amp; Creative Design</p>
+      <h1 class="hero-name reveal-up">Iman Asroy</h1>
+      <div class="hero-roles reveal-up">
+        <span class="pill">Digital Marketing</span>
+        <span class="pill">Multimedia Design</span>
+        <span class="pill">Content Creation</span>
+        <span class="pill">Photography</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Final-year New Media Communication student turning ideas into digital
+        experiences — through design, content, photography and code.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="cv.pdf" class="btn btn-ghost" download>Download CV</a>
+        <a href="#contact" class="btn btn-text">Contact me <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up">
+      <div class="frame hero-portrait">
+        <img src="assets/profile-picture.jpg" alt="Portrait of Iman Asroy" onerror="this.parentElement.classList.add('img-missing')">
+        <div class="img-placeholder">
+          <span>assets/profile-picture.jpg</span>
+          <small>Drop your headshot here</small>
+        </div>
+      </div>
+      <div class="hero-tag">
+        <i class="dot"></i> Sabah, Malaysia — open to internships
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">About</span>
+    <h2>Where creativity meets craft</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="frame about-image reveal-up">
+      <img src="assets/about.png" alt="Iman Asroy at work" onerror="this.parentElement.classList.add('img-missing')">
+      <div class="img-placeholder">
+        <span>assets/about.jpg</span>
+        <small>Add a candid photo</small>
+      </div>
+    </div>
+
+    <div class="about-copy reveal-up">
+      <p class="lead">I'm Iman — a final-year New Media Communication student who
+        enjoys turning ideas into things people can see, use and remember.</p>
+      <p>My work spans digital marketing, multimedia design, photography and
+        front-end development. Through university projects I've planned
+        campaigns, produced content and designed visuals that connect with
+        real audiences.</p>
+      <p>I'm just as comfortable behind a camera as I am in a code editor —
+        good creative work and good engineering come from the same instinct:
+        care for the details.</p>
+    </div>
+  </div>
+
+  <div class="stat-row reveal-up">
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Projects shipped</span></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Creative &amp; technical domains</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Languages spoken</span></div>
+    <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Graduating</span></div>
+  </div>
+
+  <div class="facts-grid reveal-up">
+    <div class="fact-card">
+      <span class="fact-label">Location</span>
+      <span class="fact-value">Sabah, Malaysia</span>
+    </div>
+    <div class="fact-card">
+      <span class="fact-label">Education</span>
+      <span class="fact-value">B. New Media Communication</span>
+    </div>
+    <div class="fact-card">
+      <span class="fact-label">University</span>
+      <span class="fact-value">Universiti Malaysia Perlis</span>
+    </div>
+    <div class="fact-card">
+      <span class="fact-label">Languages</span>
+      <span class="fact-value">Malay · English · Basic Japanese</span>
+    </div>
+    <div class="fact-card fact-live">
+      <span class="fact-label">Status</span>
+      <span class="fact-value"><i class="dot"></i> Open to internships</span>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS -->
+<section class="section section-alt" aria-labelledby="approach-heading">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">Approach</span>
+    <h2 id="approach-heading">How I work</h2>
+  </div>
+  <div class="strengths-grid">
+    <div class="strength-card reveal-up">
+      <h3>Creative Thinking</h3>
+      <p>Exploring different approaches to solve problems while keeping every project practical and meaningful.</p>
+    </div>
+    <div class="strength-card reveal-up">
+      <h3>Fast Learner</h3>
+      <p>I adapt quickly to new environments, software and technologies — and keep improving as I go.</p>
+    </div>
+    <div class="strength-card reveal-up">
+      <h3>Team Collaboration</h3>
+      <p>University projects across different teams have sharpened my communication and teamwork.</p>
+    </div>
+    <div class="strength-card reveal-up">
+      <h3>Problem Solving</h3>
+      <p>I like identifying challenges and finding practical solutions through planning and iteration.</p>
+    </div>
+    <div class="strength-card reveal-up">
+      <h3>Self Improvement</h3>
+      <p>Always looking for the next skill to pick up — personally and professionally.</p>
+    </div>
+    <div class="strength-card reveal-up">
+      <h3>Responsible</h3>
+      <p>I complete tasks on time while holding quality and professionalism to a high standard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">Skills</span>
+    <h2>What I bring</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal-up">
+      <h3>Digital Marketing</h3>
+      <div class="badge-group">
+        <span class="badge">Social Media Management</span>
+        <span class="badge">Content Planning</span>
+        <span class="badge">Audience Engagement</span>
+        <span class="badge">Brand Communication</span>
+        <span class="badge">Basic SEO</span>
+        <span class="badge">Campaign Support</span>
+      </div>
+    </div>
+    <div class="skill-card reveal-up">
+      <h3>Multimedia</h3>
+      <div class="badge-group">
+        <span class="badge">Photography</span>
+        <span class="badge">Videography</span>
+        <span class="badge">Video Editing</span>
+        <span class="badge">Graphic Design</span>
+        <span class="badge">Motion Graphics</span>
+        <span class="badge">Visual Storytelling</span>
+      </div>
+    </div>
+    <div class="skill-card reveal-up">
+      <h3>Development</h3>
+      <div class="badge-group">
+        <span class="badge">HTML / CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Responsive Design</span>
+        <span class="badge badge-muted">Git — learning</span>
+        <span class="badge">Front-end Development</span>
+        <span class="badge badge-muted">Back-end — learning</span>
+      </div>
+    </div>
+    <div class="skill-card reveal-up">
+      <h3>Software</h3>
+      <div class="badge-group">
+        <span class="badge">Adobe Premiere Pro</span>
+        <span class="badge">Adobe Illustrator</span>
+        <span class="badge">Adobe After Effects</span>
+        <span class="badge">CapCut</span>
+        <span class="badge">Lightroom</span>
+        <span class="badge">Canva</span>
+        <span class="badge">Microsoft Office</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="learning-strip reveal-up">
+    <span class="learning-label">Currently learning</span>
+    <div class="badge-group">
+      <span class="badge badge-outline">Frontend Development</span>
+      <span class="badge badge-outline">Backend Development</span>
+      <span class="badge badge-outline">Modern Web Design</span>
+      <span class="badge badge-outline">UI/UX Principles</span>
+      <span class="badge badge-outline">Photography Techniques</span>
+      <span class="badge badge-outline">Content Marketing</span>
+      <span class="badge badge-outline">Motion Graphics</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-alt">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">Selected Work</span>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://drive.google.com/drive/folders/1RL1RRTgoUlxIahIjYBmolRzsLbJtGBuo?usp=sharing" target="_blank" rel="noopener" aria-label="View SAFELY project files">
+          <img src="assets/projects/safely-cover.png" alt="SAFELY project cover" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/safely-cover.jpg</span></div>
+        <span class="project-category">Web Development</span>
+      </div>
+      <div class="project-body">
+        <h3>SAFELY</h3>
+        <p class="project-tagline">Road Safety Learning Application</p>
+        <p class="project-desc">An educational web app built to improve road safety awareness among children through an interactive, quiz-based learning experience with a friendly interface for young learners.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Android WebView</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Developer</span>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1RL1RRTgoUlxIahIjYBmolRzsLbJtGBuo?usp=sharing" target="_blank" rel="noopener">Project files ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://drive.google.com/drive/folders/1QqgV6Pp6uy0NU1PcEmrCbFrjBtLybbuO?usp=share_link" target="_blank" rel="noopener" aria-label="View Indera Busana photo folder">
+          <img src="assets/projects/indera-cover.jpg" alt="Indera Busana fashion show cover" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/indera-cover.jpg</span></div>
+        <span class="project-category">Event Management</span>
+      </div>
+      <div class="project-body">
+        <h3>Indera Busana</h3>
+        <p class="project-tagline">Fashion Show Event Management</p>
+        <p class="project-desc">Managed venue preparation, logistics coordination, equipment arrangement and event setup for the Indera Busana Fashion Show, working closely with the committee from prep to wrap.</p>
+        <div class="project-tags">
+          <span class="tag">Logistics</span><span class="tag">Event Planning</span><span class="tag">Coordination</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Venue &amp; Logistics Team</span>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1QqgV6Pp6uy0NU1PcEmrCbFrjBtLybbuO?usp=share_link" target="_blank" rel="noopener">Photos 1 ↗</a>
+            <a href="https://drive.google.com/drive/folders/12EUEN-wx0YSlXSAB97RuqxtVgfIXCVqA?usp=share_link" target="_blank" rel="noopener">Photos 2 ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://www.canva.com/design/DAG_wNsLKa8/O16C1Kc8ymUcv-X3ZXMprQ/view?utm_content=DAG_wNsLKa8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf5d68afe90" target="_blank" rel="noopener" aria-label="View RiseEdPerlis report">
+          <img src="assets/projects/riseed-cover.jpg" alt="RiseEdPerlis campaign cover" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/riseed-cover.jpg</span></div>
+        <span class="project-category">Public Relations</span>
+      </div>
+      <div class="project-body">
+        <h3>RiseEdPerlis</h3>
+        <p class="project-tagline">Public Relations Campaign</p>
+        <p class="project-desc">Developed promotional materials and communication strategy for the RiseEdPerlis campaign, producing engaging content while sharpening teamwork and planning skills.</p>
+        <div class="project-tags">
+          <span class="tag">Canva</span><span class="tag">Content Creation</span><span class="tag">TikTok</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Content Creator</span>
+          <div class="project-links">
+            <a href="https://www.canva.com/design/DAG_wNsLKa8/O16C1Kc8ymUcv-X3ZXMprQ/view?utm_content=DAG_wNsLKa8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf5d68afe90" target="_blank" rel="noopener">Report ↗</a>
+            <a href="https://www.tiktok.com/@riseedperlis?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://drive.google.com/drive/folders/1NsAs23zQVkRYlxM7CGfnr2NiH8GfV1zd?usp=sharing" target="_blank" rel="noopener" aria-label="View Cyberbullying webinar materials">
+          <img src="assets/projects/cyber-cover.png" alt="Cyberbullying webinar cover" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/cyber-cover.jpg</span></div>
+        <span class="project-category">Digital Media</span>
+      </div>
+      <div class="project-body">
+        <h3>Cyberbullying Webinar</h3>
+        <p class="project-tagline">"Buli Siber: Mengapa Semakin Berani?"</p>
+        <p class="project-desc">Contributed to organizing and promoting the webinar — designing promotional materials, coordinating online communication and supporting event execution.</p>
+        <div class="project-tags">
+          <span class="tag">Poster Design</span><span class="tag">Canva</span><span class="tag">Coordination</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Creative Committee</span>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1NsAs23zQVkRYlxM7CGfnr2NiH8GfV1zd?usp=sharing" target="_blank" rel="noopener">Report ↗</a>
+            <a href="https://drive.google.com/drive/folders/1js67auQaPq1JXYHQcFSLO82LpVnG_DnY?usp=sharing" target="_blank" rel="noopener">Webinar ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://youtu.be/5I5_vyhxjws?si=vRtgLvYzebJD4HQe" target="_blank" rel="noopener" aria-label="Watch video production">
+          <img src="assets/projects/actor-cover.jpeg" alt="Video production still" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/actor-cover.jpg</span></div>
+        <span class="project-category">Video Production</span>
+      </div>
+      <div class="project-body">
+        <h3>Video Production</h3>
+        <p class="project-tagline">Actor</p>
+        <p class="project-desc">Performed as an actor in a university video production, gaining experience in camera presence, teamwork and production workflow.</p>
+        <div class="project-tags">
+          <span class="tag">Acting</span><span class="tag">Camera Presence</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Actor</span>
+          <div class="project-links">
+            <a href="https://youtu.be/5I5_vyhxjws?si=vRtgLvYzebJD4HQe" target="_blank" rel="noopener">Actor ↗</a>
+            <a href="https://youtu.be/8QXgBCoUKpc" target="_blank" rel="noopener">Video 1 ↗</a>
+            <a href="https://youtu.be/DGwKALiMcO0" target="_blank" rel="noopener">Video 2 ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card reveal-up">
+      <div class="frame project-media">
+        <a href="https://drive.google.com/drive/folders/1kV33r__AT0nZ36AB-VdPJXZ_T9KezuYC?usp=sharing" target="_blank" rel="noopener" aria-label="View photography folder">
+          <img src="assets/projects/photography-cover.png" alt="Photography work" loading="lazy" onerror="this.closest('.frame').classList.add('img-missing')">
+        </a>
+        <div class="img-placeholder"><span>assets/projects/photography-cover.jpg</span></div>
+        <span class="project-category">Photography</span>
+      </div>
+      <div class="project-body">
+        <h3>Photography</h3>
+        <p class="project-tagline">Photographer</p>
+        <p class="project-desc">Portraits, events and creative photography — focused on composition, lighting and storytelling through stills.</p>
+        <div class="project-tags">
+          <span class="tag">Lightroom</span><span class="tag">Composition</span><span class="tag">Lighting</span>
+        </div>
+        <div class="project-foot">
+          <span class="project-role">Role — Photographer</span>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1kV33r__AT0nZ36AB-VdPJXZ_T9KezuYC?usp=sharing" target="_blank" rel="noopener">Photo folder ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE & EDUCATION -->
+<section id="experience" class="section">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">Experience</span>
+    <h2>Timeline</h2>
+  </div>
+
+  <div class="timeline-wrap">
+    <div class="timeline-col reveal-up">
+      <h3 class="timeline-heading">Experience</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <h4>Digital Marketing &amp; Media Assistant</h4>
+          <p>Managed social content creation, scheduled posts, designed promotional visuals, edited short-form videos and supported brand communication across platforms.</p>
+        </li>
+        <li class="timeline-item">
+          <h4>Camera Operator &amp; Video Editor</h4>
+          <p>Operated cameras during live productions and assisted in post-production editing for university events and multimedia projects.</p>
+        </li>
+        <li class="timeline-item">
+          <h4>Photography &amp; Videography</h4>
+          <p>Produced visual documentation for university events and created promotional media for reporting and digital communication.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="timeline-col reveal-up">
+      <h3 class="timeline-heading">Education</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-year">2023 — Present</span>
+          <h4>Bachelor of New Media Communication</h4>
+          <p>Universiti Malaysia Perlis</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2022</span>
+          <h4>STPM</h4>
+          <p>SMK Usukan</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2020</span>
+          <h4>SPM</h4>
+          <p>SMK Pekan II</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS + GOAL -->
+<section class="section section-alt">
+  <div class="split-cards">
+    <div class="info-card reveal-up">
+      <span class="eyebrow">Off duty</span>
+      <div class="badge-group">
+        <span class="badge badge-outline">Coffee</span>
+        <span class="badge badge-outline">Photography</span>
+        <span class="badge badge-outline">Reading</span>
+        <span class="badge badge-outline">Coding</span>
+        <span class="badge badge-outline">Fitness</span>
+      </div>
+    </div>
+    <div class="info-card info-card-accent reveal-up">
+      <span class="eyebrow">Where I'm headed</span>
+      <p class="goal-text">I aspire to build a career in digital marketing and
+        creative media, while continuously expanding into full-stack
+        development — digital experiences that combine creativity,
+        technology and meaningful communication.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="contact-grid">
+    <div class="contact-intro reveal-up">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's create something<br>amazing together</h2>
+      <p>Currently looking for internship opportunities and exciting creative
+        projects. Whether you've got a question, a collaboration idea, or
+        just want to connect — reach out.</p>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imasroy113@gmail.com&su=Let%27s%20work%20together&body=Hi%20Iman%2C%0A%0A" target="_blank" rel="noopener" class="contact-email">
+        imasroy113@gmail.com
+      </a>
+      <span class="contact-location"><i class="dot"></i> Sabah, Malaysia</span>
+
+      <!-- Add your real profile URLs below -->
+      <div class="social-links" aria-label="Social links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imasroy113@gmail.com" target="_blank" rel="noopener" aria-label="Email" class="social-link">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-link" data-placeholder>
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 11v5M8 8v.01M12 16v-5M12 11c0-1.1.9-2 2.5-2s2.5.9 2.5 2v5"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-link" data-placeholder>
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-up" id="contactForm" novalidate>
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Send message</button>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Iman Asroy</span>
+  <nav class="footer-nav" aria-label="Footer">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
